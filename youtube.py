@@ -122,7 +122,7 @@ if __name__ == '__main__':
         if all([not path.exists('/usr/sbin/tor'), youtube_views.alive]):
             exit('Please Install Tor')
 
-    try:youtube_views.run()
+    try:youtube_views.run(1000)
     except Exception as error:
         print('Error:',error)
         youtube_views.exit()
